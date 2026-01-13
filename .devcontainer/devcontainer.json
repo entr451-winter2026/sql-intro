@@ -1,0 +1,22 @@
+{
+  "name": "Ruby Development Environment",
+  "image": "ruby:4.0",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Shopify.ruby-lsp"
+      ],
+      "settings": {
+        "editor.stickyScroll.enabled": true,
+        "[ruby]": {
+          "editor.defaultFormatter": "Shopify.ruby-lsp",
+          // "editor.formatOnSave": true,
+          // "editor.formatOnType": true,
+          "editor.tabSize": 2,
+          "editor.insertSpaces": true,
+          "editor.semanticHighlighting.enabled": true
+        }
+      }
+    }
+  }
+}
