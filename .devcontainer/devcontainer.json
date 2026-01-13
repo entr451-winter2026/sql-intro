@@ -1,9 +1,7 @@
 {
   "name": "Ruby Development Environment",
   "image": "ruby:4.0",
-  "features": {
-    "ghcr.io/devcontainers-contrib/features/sqlite:1": {}
-  },
+  "postCreateCommand": "apt-get update && apt-get install -y sqlite3 libsqlite3-dev",
   "customizations": {
     "vscode": {
       "extensions": [
